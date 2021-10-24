@@ -1,0 +1,20 @@
+{
+  "name": "light-and-space",
+  "version": "1.0.0",
+  "description": "A portfolio for an architecture firm.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel *.html --open",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tiffvoli/light-and-space.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tiffvoli/light-and-space/issues"
+  },
+  "homepage": "https://github.com/Tiffvoli/light-and-space#readme"
+}
