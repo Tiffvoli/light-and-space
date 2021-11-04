@@ -1,0 +1,105 @@
+/* -- content -- */
+
+.banner-wrapper {
+	height: 100vh;
+}
+
+.banner {
+	margin-top: 6rem;
+	height: 80%;
+}
+
+.side-bar {
+	transform: rotate(-90deg);
+	width: 90vh;
+	transform-origin: top left;
+	position: absolute;
+	bottom: 0rem;
+}
+
+.side-bar ul {
+	justify-content: space-evenly;
+}
+
+.side-bar li {
+	font-size: 1.5rem;
+	text-align: center;
+	width: fit-content;
+	padding: 0 5rem;
+}
+
+/* front page */
+.row {
+	display: flex;
+	padding-left: 15rem;
+	width: 100%;
+}
+
+.col-m {
+	width: 50%;
+	position: relative;
+}
+
+.hero-img-1 {
+	background: url("/img/hero-banner.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.hero-img-1:hover .hover-effect-1,
+.hero-img-2:hover .hover-effect-2 {
+	opacity: 1;
+}
+
+.hover-effect-1,
+.hover-effect-2 {
+	opacity: 0;
+}
+
+.hero-img-2 {
+	background: url("img/hero-banner-2.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.hover-bg {
+	background: var(--hover-colour);
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: 0.3s;
+}
+
+.hover-text-l {
+	font-family: var(--primary-font);
+	font-size: 5.5rem;
+	color: var(--black);
+	font-weight: 100;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: 0.3s;
+}
+
+@media (max-width: 1000px) {
+	.row {
+		padding-left: 8rem;
+	}
+	.banner {
+		flex-direction: column;
+	}
+	.col-m {
+		width: 100%;
+		height: 50%;
+	}
+}
+@media (max-width: 615px) {
+	.row {
+		height: 85%;
+	}
+}
+
+@media (max-width: 475px) {
+	.row {
+		padding-left: 5rem;
+	}
+}
